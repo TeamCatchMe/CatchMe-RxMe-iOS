@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		256DE82C8715F76A9ED6F7F9 /* Pods_MVVM_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249D34A90BDAFE9746F796AF /* Pods_MVVM_Example.framework */; };
 		5B3C13A026D27A680014AAC8 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C139F26D27A680014AAC8 /* UIView + Extension.swift */; };
+		5B3C13BC26D60E680014AAC8 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13BB26D60E680014AAC8 /* ArticleModel.swift */; };
+		5B3C13BF26D60EFD0014AAC8 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13BE26D60EFD0014AAC8 /* ArticleService.swift */; };
+		5B3C13C226D60F910014AAC8 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13C126D60F910014AAC8 /* APIConstant.swift */; };
+		5B3C13C526D611CF0014AAC8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13C426D611CF0014AAC8 /* NetworkResult.swift */; };
 		EDFAFF3B26CE3B3400704A69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFF3A26CE3B3400704A69 /* AppDelegate.swift */; };
 		EDFAFF3D26CE3B3400704A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFF3C26CE3B3400704A69 /* SceneDelegate.swift */; };
 		EDFAFF3F26CE3B3500704A69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFF3E26CE3B3500704A69 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 		1BBF62E0120C73429D153BFA /* Pods-MVVM-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Example.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Example/Pods-MVVM-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		249D34A90BDAFE9746F796AF /* Pods_MVVM_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3C139F26D27A680014AAC8 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		5B3C13BB26D60E680014AAC8 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		5B3C13BE26D60EFD0014AAC8 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		5B3C13C126D60F910014AAC8 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		5B3C13C426D611CF0014AAC8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		EDFAFF3726CE3B3400704A69 /* MVVM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFAFF3A26CE3B3400704A69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFAFF3C26CE3B3400704A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,9 @@
 		5B3C138C26D279710014AAC8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5B3C13C426D611CF0014AAC8 /* NetworkResult.swift */,
+				5B3C13C126D60F910014AAC8 /* APIConstant.swift */,
+				5B3C13BE26D60EFD0014AAC8 /* ArticleService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 		5B3C139126D2798E0014AAC8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B3C13BB26D60E680014AAC8 /* ArticleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,9 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B3C13A026D27A680014AAC8 /* UIView + Extension.swift in Sources */,
+				5B3C13BC26D60E680014AAC8 /* ArticleModel.swift in Sources */,
+				5B3C13BF26D60EFD0014AAC8 /* ArticleService.swift in Sources */,
 				EDFAFF3F26CE3B3500704A69 /* ViewController.swift in Sources */,
 				EDFAFF3B26CE3B3400704A69 /* AppDelegate.swift in Sources */,
+				5B3C13C226D60F910014AAC8 /* APIConstant.swift in Sources */,
 				EDFAFF3D26CE3B3400704A69 /* SceneDelegate.swift in Sources */,
+				5B3C13C526D611CF0014AAC8 /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

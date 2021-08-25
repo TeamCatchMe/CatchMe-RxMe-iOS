@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         configUI()
         setupAutoLayout()
+        ArticleService.shared.fetchNews { (response) in
+            print(response)
+        }
     }
     
     // MARK: - Custom Method
