@@ -11,5 +11,8 @@ target 'MVVM-Example' do
   pod 'lottie-ios'
   pod 'Moya', '~> 14.0'
   pod 'Kingfisher', '~> 6.0'
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+  pod 'SDWebImage', '~> 5.0'
 
 end
