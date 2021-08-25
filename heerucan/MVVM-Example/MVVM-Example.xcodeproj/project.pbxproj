@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		256DE82C8715F76A9ED6F7F9 /* Pods_MVVM_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249D34A90BDAFE9746F796AF /* Pods_MVVM_Example.framework */; };
 		5B3C13A026D27A680014AAC8 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C139F26D27A680014AAC8 /* UIView + Extension.swift */; };
-		5B3C13BC26D60E680014AAC8 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13BB26D60E680014AAC8 /* ArticleModel.swift */; };
 		5B3C13BF26D60EFD0014AAC8 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13BE26D60EFD0014AAC8 /* ArticleService.swift */; };
 		5B3C13C226D60F910014AAC8 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13C126D60F910014AAC8 /* APIConstant.swift */; };
 		5B3C13C526D611CF0014AAC8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13C426D611CF0014AAC8 /* NetworkResult.swift */; };
+		5B3C13D526D63EB60014AAC8 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13D426D63EB60014AAC8 /* PetModel.swift */; };
+		5B3C13D826D63EE70014AAC8 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13D726D63EE70014AAC8 /* PetViewModel.swift */; };
+		5B3C13DC26D63FA00014AAC8 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C13DB26D63FA00014AAC8 /* PetView.swift */; };
 		EDFAFF3B26CE3B3400704A69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFF3A26CE3B3400704A69 /* AppDelegate.swift */; };
 		EDFAFF3D26CE3B3400704A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFF3C26CE3B3400704A69 /* SceneDelegate.swift */; };
 		EDFAFF3F26CE3B3500704A69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFF3E26CE3B3500704A69 /* ViewController.swift */; };
@@ -25,10 +27,12 @@
 		1BBF62E0120C73429D153BFA /* Pods-MVVM-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Example.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Example/Pods-MVVM-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		249D34A90BDAFE9746F796AF /* Pods_MVVM_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3C139F26D27A680014AAC8 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
-		5B3C13BB26D60E680014AAC8 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		5B3C13BE26D60EFD0014AAC8 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		5B3C13C126D60F910014AAC8 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		5B3C13C426D611CF0014AAC8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		5B3C13D426D63EB60014AAC8 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		5B3C13D726D63EE70014AAC8 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		5B3C13DB26D63FA00014AAC8 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
 		EDFAFF3726CE3B3400704A69 /* MVVM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFAFF3A26CE3B3400704A69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFAFF3C26CE3B3400704A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +59,9 @@
 			children = (
 				5B3C138E26D2797D0014AAC8 /* Extension */,
 				5B3C139126D2798E0014AAC8 /* Model */,
-				5B3C139226D279920014AAC8 /* ViewController */,
+				5B3C13DA26D63F830014AAC8 /* View */,
+				5B3C13C826D632010014AAC8 /* ViewModel */,
+				5B3C139226D279920014AAC8 /* Controller */,
 				5B3C139026D2798A0014AAC8 /* Cell */,
 				5B3C138F26D279860014AAC8 /* Support */,
 			);
@@ -117,17 +123,33 @@
 		5B3C139126D2798E0014AAC8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5B3C13BB26D60E680014AAC8 /* ArticleModel.swift */,
+				5B3C13D426D63EB60014AAC8 /* PetModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5B3C139226D279920014AAC8 /* ViewController */ = {
+		5B3C139226D279920014AAC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EDFAFF3E26CE3B3500704A69 /* ViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B3C13C826D632010014AAC8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B3C13D726D63EE70014AAC8 /* PetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B3C13DA26D63F830014AAC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B3C13DB26D63FA00014AAC8 /* PetView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6E7AA31789F2C9E4E3B4E376 /* Frameworks */ = {
@@ -288,10 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3C13D826D63EE70014AAC8 /* PetViewModel.swift in Sources */,
 				5B3C13A026D27A680014AAC8 /* UIView + Extension.swift in Sources */,
-				5B3C13BC26D60E680014AAC8 /* ArticleModel.swift in Sources */,
 				5B3C13BF26D60EFD0014AAC8 /* ArticleService.swift in Sources */,
 				EDFAFF3F26CE3B3500704A69 /* ViewController.swift in Sources */,
+				5B3C13DC26D63FA00014AAC8 /* PetView.swift in Sources */,
+				5B3C13D526D63EB60014AAC8 /* PetModel.swift in Sources */,
 				EDFAFF3B26CE3B3400704A69 /* AppDelegate.swift in Sources */,
 				5B3C13C226D60F910014AAC8 /* APIConstant.swift in Sources */,
 				EDFAFF3D26CE3B3400704A69 /* SceneDelegate.swift in Sources */,

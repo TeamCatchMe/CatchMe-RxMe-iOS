@@ -12,24 +12,29 @@ import Then
 
 class ViewController: UIViewController {
     // MARK: - Properties
+    let petView = PetView()
+    let viewModel = PetViewModel()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
         setupAutoLayout()
-        ArticleService.shared.fetchNews { (response) in
-            print(response)
-        }
+        viewModel.configure(petView)
     }
     
-    // MARK: - Custom Method
+    // MARK: - Custom Methods
     func configUI() {
-        view.backgroundColor = .green
+        view.backgroundColor = .white
     }
     
     func setupAutoLayout() {
+        view.addSubview(petView)
         
+        petView.snp.makeConstraints { make in
+            make.top.bottom.equalToSuperview().inset(50)
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
     }
 }
 
